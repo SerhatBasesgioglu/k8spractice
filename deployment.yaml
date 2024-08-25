@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appserver
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: appserver
+  template:
+    metadata:
+      labels:
+        app: appserver
+    spec:
+      containers:
+        - name: appservercontainer
+          image: serhatbasesgioglu/k8spractice:latest
+          ports:
+            - containerPort: 8080
