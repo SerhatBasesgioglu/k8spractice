@@ -1,4 +1,6 @@
-How to setup and test
+
+**How to setup and test**
+
 
 Appserver image has been uploaded to docker hub, there is no need to rebuild it.
 
@@ -21,3 +23,5 @@ Deploy pods, service and ingress controller
 "kubectl apply -f ingress.yaml"
 
 4- Run "curl localhost:80" command on shell to see "Hello World" text.
+
+Docker Hub image link: https://hub.docker.com/r/serhatbasesgioglu/k8spractice
